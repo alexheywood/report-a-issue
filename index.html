@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report an issue</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 text-xl">
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex">
+                <svg class="mx-3" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M256 32H181.2c-27.1 0-51.3 17.1-60.3 42.6L3.1 407.2C1.1 413 0 419.2 0 425.4C0 455.5 24.5 480 54.6 480H256V416c0-17.7 14.3-32 32-32s32 14.3 32 32v64H521.4c30.2 0 54.6-24.5 54.6-54.6c0-6.2-1.1-12.4-3.1-18.2L455.1 74.6C446 49.1 421.9 32 394.8 32H320V96c0 17.7-14.3 32-32 32s-32-14.3-32-32V32zm64 192v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32s32 14.3 32 32z"/></svg>
+                <h1 class="text-white font-bold text-2xl">Report An Issue</h1>
+            </div>
+            <div class="flex">
+            <a href="#" class="text-white">
+                <svg class="flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/></svg>
+                Exit</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="lg:container mx-auto p-4">
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="mb-8">
+<ol class="flex items-center w-full">
+    <li class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-blue-100 after:border-4 after:inline-block">
+        <span id="one" class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0">
+            1
+        </span>
+    </li>
+    <li class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-100 after:border-4 after:inline-block dark:after:border-gray-700">
+        <span  id="two" class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0">
+            2
+        </span>
+    </li>
+    <li  class="flex items-center w-full">
+        <span id="three" class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0">
+            3
+        </span>
+    </li>
+    <li id="four" class="flex items-center w-full">
+        <span class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path id="tick" fill="grey" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+        </span>
+    </li>
+</ol>
+
+    <hr class="text-xl font-bold my-3" />
+
+        </div>
+        <form id="reportForm">
+          <!-- Stage 1 -->
+          <div id="stage1" class="stage">
+            <h2 class="text-3xl font-bold my-8">Welcome to your new reporting tool.</h2>
+            <p class="text-xl my-2">You can use this reporting tool to report faults such as potholes, streetlight faults and flooding incidents.
+                Please complete the form and a case will automatically be raised with the relevant team.
+            </p>
+            <p class="text-xl my-2">If you would like to keep up to date with changes in your reported issue you have two options:
+                <ul class="mx-5 list-disc text-xl">
+                    <li>You can log into your customer account, this will redirect you to a new portal after submitting this form.</li>
+                    <li>You can provide an email address without having to log in to a customer account.</li>
+
+                </ul>
+            </p>
+            <div class="mt-5">
+            <label for="issue-type"
+              ><h2 class="text-xl font-bold mb-4">What would you like to report?</h2></label
+            >
+            <select
+              id="issue type"
+              class="w-full p-2 border border-gray-300 rounded"
+            >
+              <option value="">Select an issue</option>
+              <option value="pothole">Pothole</option>
+              <option value="streetlight">Streetlight</option>
+              <option value="graffiti">Graffiti</option>
+            </select>
+        </div>
+          </div>
+          <!-- Stage 2 -->
+          <div id="stage2" class="stage hidden">
+            <h2 class="text-xl font-bold mb-4">Location and Asset Details</h2>
+            <div id="map" style="height: 70vh" class="w-full bg-gray-200 mb-4">
+                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=civic+offices,+holton+road&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+            </div>
+            <input
+              type="text"
+              placeholder="Asset Id"
+              class="w-full p-2 border border-gray-300 rounded mb-2"
+            />
+            <input
+              type="text"
+              placeholder="Street Name"
+              class="w-full p-2 border border-gray-300 rounded mb-2"
+            />
+            <textarea
+              placeholder="Any additional information"
+              class="w-full p-2 border border-gray-300 rounded"
+            ></textarea>
+          </div>
+          <!-- Stage 3 -->
+          <div id="stage3" class="stage hidden">
+            <h2 class="text-xl font-bold mb-4">Contact Details</h2>
+            <div class="mb-2">
+              <label class="block mb-1">
+                <input
+                id="radioAccount"
+                  type="radio"
+                  name="contact"
+                  value="account"
+                  class="mr-2"
+                  onClick="showEmail(this)"
+                />
+                Report with Customer Account
+              </label>
+              <label class="block mb-1">
+                <input id="radioEmail" type="radio" name="contact" value="email" class="mr-2" onClick="showEmail(this)"/>
+                Provide Email Address Only
+              </label>
+              <label class="block mb-1">
+                <input id="radioAnon" type="radio" name="contact" value="none" class="mr-2" onClick="showEmail(this)"/>
+                Do Not Provide Contact Details
+              </label>
+            </div>
+            <input
+            style="display: none"
+            id="email"
+              type="email"
+              placeholder="Email Address"
+              class="w-full p-2 border border-gray-300 rounded mb-2"
+            />
+          </div>
+
+          <div id="stage4" class="stage hidden">
+            <div id="submitted" class="">
+                <div class="text-center items-center">
+
+                <h1 class="text-3xl mb-5">Thank you for reporting this issue.</h1>
+                <p class="text-xl">Your case has been submitted.</p>
+                                
+            </div>
+              </div>
+          </div>
+
+          <div class="flex justify-between mt-4">
+            <button
+              type="button"
+              id="prevBtn"
+              class="bg-gray-500 text-white px-4 py-2 rounded hidden"
+            >
+              Previous
+            </button>
+            <button
+              type="button"
+              id="nextBtn"
+              class="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+              Next
+            </button>
+            <button
+              type="button"
+              id="submitBtn"
+              class="bg-green-500 text-white px-4 py-2 rounded hidden"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      let currentStage = 1;
+      let valid = false;
+      const stages = document.querySelectorAll(".stage");
+      const nextBtn = document.getElementById("nextBtn");
+      const prevBtn = document.getElementById("prevBtn");
+      const submitBtn = document.getElementById("submitBtn");
+      const email = document.getElementById("email")
+      const submitted = document.getElementById("submitted")
+      const tickIcon = document.getElementById("tick");
+      const emailRadio = document.getElementById('radioEmail')
+      const accountRadio = document.getElementById("radioAccount")
+      const anonRadio = document.getElementById("radioAnon")
+
+      const indOne = document.getElementById("one");
+      const indTwo = document.getElementById("two");
+      const indThree = document.getElementById("three");
+
+      let canSubmit = false;
+
+      indOne.classList.add("bg-blue-300")
+
+      nextBtn.addEventListener("click", () => {
+        if (validInputs()) {
+            if (currentStage < stages.length) {
+          stages[currentStage - 1].classList.add("hidden");
+          stages[currentStage].classList.remove("hidden");
+          currentStage++;
+          updateButtons();
+        }
+        else {
+            return 
+        }
+
+        }
+        
+      });
+
+      prevBtn.addEventListener("click", () => {
+        if (currentStage > 1) {
+          stages[currentStage - 1].classList.add("hidden");
+          stages[currentStage - 2].classList.remove("hidden");
+          currentStage--;
+          updateButtons();
+        }
+      });
+
+      submitBtn.addEventListener("click", (event) => {
+
+        if (emailRadio.checked && email.value != "") {
+            canSubmit = true
+        }
+        if (anonRadio.checked || accountRadio.checked) {
+            canSubmit = true
+        }
+        if (canSubmit){
+        event.preventDefault()
+        stages[currentStage -1].classList.add("hidden");
+        stages[currentStage].classList.remove("hidden")
+        currentStage++;
+        tickIcon.setAttribute("fill", "#63E6BE")
+        updateButtons();
+        }
+    }
+
+      )
+
+
+      function validSubmit() {
+
+       return canSubmit ? true : false
+
+      }
+
+
+      function validInputs() {
+    
+    // Get all input, radio, and select elements within the div
+    var inputs = stages[currentStage - 1].querySelectorAll("input, select, textarea");
+    var allValid = true; // Flag to track if all elements are valid
+    
+    // Loop through each element
+    inputs.forEach(element => {
+        // Reset the background color
+        element.style.borderColor = "";
+        element.style.color = "black"
+        
+        // Check if the element is a radio button
+        if (element.type === "radio") {
+            var name = element.name;
+            var radios = stages[currentStage -1].querySelectorAll(`input[name="${name}"]`);
+
+            var isChecked = Array.from(radios).some(radio => radio.checked);
+            if (!isChecked) {
+                radios.forEach(radio => 
+                    radio.style.borderColor = "#ff6666",
+                );
+                allValid = false; // If no radio button in the group is checked, set flag to false
+            }
+        } else if (element.tagName === "SELECT") {
+            // Check if the select element has a selected value
+            if (element.value === "") {
+                element.style.borderColor = "#ff6666"; // If the select element has no value, make it red
+                allValid = false; // Set flag to false
+            }
+        } else {
+            // Check if the input value is empty
+            if (element.value === "") {
+                element.style.borderColor = "#ff6666"; // If any input is empty, make it red
+                allValid = false; // Set flag to false
+            }
+        }
+    });
+    
+    return allValid; // Return the flag indicating if all elements are valid
+}
+      function showEmail(input) {
+        if (input.value == "account" || input.value == "none") {
+            email.style.display = "none"
+            canSubmit = true
+            return
+        }
+
+        email.style.display = "block"
+      }
+
+      function updateButtons() {
+        if (currentStage === 1) {
+          prevBtn.classList.add("hidden");
+          nextBtn.classList.remove("hidden");
+          submitBtn.classList.add("hidden");
+          indOne.classList.add("bg-blue-300")
+          indTwo.classList.remove("bg-blue-300");
+          indThree.classList.remove("bg-blue-300")
+
+        } else if (currentStage === 3) {
+          prevBtn.classList.remove("hidden");
+          nextBtn.classList.add("hidden");
+          submitBtn.classList.remove("hidden");
+          indThree.classList.add("bg-blue-300")
+          indOne.classList.remove("bg-blue-300")
+          indTwo.classList.remove("bg-blue-300");
+        } 
+        else if (currentStage === 4) {
+            prevBtn.classList.add("hidden")
+            nextBtn.classList.add("hidden");
+            submitBtn.classList.add("hidden")
+            indThree.classList.remove("bg-blue-300")
+        }
+        else {
+          prevBtn.classList.remove("hidden");
+          nextBtn.classList.remove("hidden");
+          submitBtn.classList.add("hidden");
+          indTwo.classList.add("bg-blue-300")
+          indOne.classList.remove("bg-blue-300")
+          indThree.classList.remove("bg-blue-300")
+        }
+      }
+    </script>
+  </body>
+</html>
